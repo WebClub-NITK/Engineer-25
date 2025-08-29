@@ -68,7 +68,7 @@ export default function HorizontalImageGallery() {
   </div>
   <h3
     className="
-      text-white font-semibold
+      text-white font-semibold text-3d-light
       text-base sm:text-lg md:text-xl
       text-center mt-4 truncate
       w-24 sm:w-32 md:w-44 lg:w-56

@@ -96,7 +96,7 @@ export default function IntroOverlay({
   const [starSpeed, setStarSpeed] = useState(1)
 
   // Only two lines: ENGINEER and NITK
-  const lines = useMemo(() => ['ENGINEER - 25', 'NITK'], [])
+  const lines = useMemo(() => ['ENGINEER 25', 'NITK'], [])
 
   const { lineIndex, displayed, done } = useTypewriter(lines, 45, 800)
 
@@ -233,17 +233,17 @@ export default function IntroOverlay({
               initial={false}
               animate={{ opacity: stage === 'dim' ? 0.6 : 1, scale: stage === 'dim' ? 1.05 : 1 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="font-space-grotesk font-extrabold text-neutral-900"
+              className="font-space-grotesk font-extrabold text-neutral-900 text-3d-hero"
               style={{ fontSize: 'clamp(3rem, 8vw, 7rem)' }}
             >
-              {lineIndex === 0 ? displayed : 'ENGINEER - 25'}
+              {lineIndex === 0 ? displayed : 'ENGINEER 25'}
               {lineIndex === 0 && <span className="ml-1 animate-pulse">▌</span>}
             </motion.h1>
 
             {/* H2: NITK */}
             <div className="mt-2">
               <h2
-                className="font-space-grotesk font-semibold text-neutral-700"
+                className="font-space-grotesk font-semibold text-neutral-700 text-3d-medium"
                 style={{ fontSize: 'clamp(1.75rem, 5vw, 3rem)' }}
               >
                 {lineIndex === 1 ? displayed : lineIndex > 1 ? 'NITK' : ''}
@@ -273,14 +273,14 @@ export default function IntroOverlay({
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                   transition={{ duration: 0.6, ease: 'easeOut' }}
-                  className="mt-10 flex justify-center"
+                  className="mt-6 flex justify-center"
                 >
                   <MotionButton
                     aria-label="Enter the quantum realm"
                     onClick={onFancyEnter}
                     variant="outline"
                     size="lg"
-                    className="rounded-full px-8 py-4 text-lg border-neutral-300 bg-white text-neutral-900 shadow-[0_0_20px_rgba(0,0,0,0.08)] hover:shadow-[0_0_40px_rgba(0,0,0,0.18)] hover:scale-[1.03] transition-transform"
+                    className="rounded-full px-8 py-4 text-lg border-neutral-300 bg-white text-neutral-900 shadow-[0_0_20px_rgba(0,0,0,0.08)] hover:shadow-[0_0_40px_rgba(0,0,0,0.18)] hover:scale-[1.03] transition-transform text-3d-light"
                   >
                     ENTER THE QUANTUM REALM
                   </MotionButton>

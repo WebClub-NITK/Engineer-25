@@ -39,7 +39,7 @@ export default function FloatingSection({
         >
        
           <div className={clsx("rounded-2xl p-6 h-full w-full")}> 
-            <h3 className="text-2xl font-bold text-white mb-2">
+            <h3 className="text-2xl font-bold text-white mb-2 text-3d-light">
               {point.title}
             </h3>
             <p className="text-sm text-gray-200 opacity-90">

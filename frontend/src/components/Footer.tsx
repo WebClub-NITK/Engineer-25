@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-6 md:py-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="space-y-1">
-            <div className="text-white font-bold tracking-wide">ENGINEER 25</div>
+            <div className="text-white font-bold tracking-wide text-3d-light">ENGINEER 25</div>
             <div className="text-sm text-cosmic-dust">Dive. Build. Celebrate.</div>
           </div>
 

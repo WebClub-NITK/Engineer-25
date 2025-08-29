@@ -30,18 +30,18 @@ export default function SchedulePage() {
       content: (
         <div className="rounded-xl border border-white/20 bg-white/15 backdrop-blur-md p-8 shadow-2xl text-white">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">Workshops • Talks • Learning</span>
-            <span className="text-sm text-white/80 bg-green-500/20 px-3 py-1 rounded-full border border-green-400/30">Day 1</span>
+            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Workshops • Talks • Learning</span>
+            <span className="text-sm text-white/80 bg-blue-500/20 px-3 py-1 rounded-full border border-blue-400/30">Day 1</span>
           </div>
           <p className="text-base text-white/95 leading-relaxed">
             Hands‑on sessions, lightning talks, and multiple technical rounds. Experience workshops led by industry experts, acclaimed NITK professors, and passionate student clubs.
           </p>
-          <div className="mt-4 flex items-center gap-2 text-green-300 text-sm">
-            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+          <div className="mt-4 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
             <span>Technical Workshops</span>
           </div>
-          <div className="mt-2 flex items-center gap-2 text-green-300 text-sm">
-            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+          <div className="mt-2 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
             <span>Expert Keynotes</span>
           </div>
         </div>
@@ -52,18 +52,18 @@ export default function SchedulePage() {
       content: (
         <div className="rounded-xl border border-white/20 bg-white/15 backdrop-blur-md p-8 shadow-2xl text-white">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Competitions • Showcase</span>
-            <span className="text-sm text-white/80 bg-yellow-500/20 px-3 py-1 rounded-full border border-yellow-400/30">Day 2</span>
+            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Competitions • Showcase</span>
+            <span className="text-sm text-white/80 bg-blue-500/20 px-3 py-1 rounded-full border border-blue-400/30">Day 2</span>
           </div>
           <p className="text-base text-white/95 leading-relaxed">
             Major competitions including Robowars, Hackathon, Bot Expo, and Tech Mela. Witness cutting-edge robotics, innovative solutions, and breakthrough projects.
           </p>
-          <div className="mt-4 flex items-center gap-2 text-yellow-300 text-sm">
-            <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+          <div className="mt-4 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
             <span>Robowars Finals</span>
           </div>
-          <div className="mt-2 flex items-center gap-2 text-yellow-300 text-sm">
-            <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+          <div className="mt-2 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
             <span>Hackathon Presentations</span>
           </div>
         </div>
@@ -74,20 +74,20 @@ export default function SchedulePage() {
       content: (
         <div className="rounded-xl border border-white/20 bg-white/15 backdrop-blur-md p-8 shadow-2xl text-white">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">Finals • Awards • Closing</span>
-            <span className="text-sm text-white/80 bg-red-500/20 px-3 py-1 rounded-full border border-red-400/30">Day 3</span>
+            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Finals • Awards • Closing</span>
+            <span className="text-sm text-white/80 bg-blue-500/20 px-3 py-1 rounded-full border border-blue-400/30">Day 3</span>
           </div>
           <p className="text-base text-white/95 leading-relaxed">
             Final rounds, project demos, and the grand closing ceremony with awards. Celebrate innovation and recognize the brilliant minds behind groundbreaking creations.
           </p>
-          <div className="mt-4 flex items-center gap-2 text-red-300 text-sm">
-            <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+          <div className="mt-4 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
             <span>Awards Ceremony</span>
           </div>
-          <div className="mt-2 flex items-center gap-2 text-red-300 text-sm">
-            <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+          <div className="mt-2 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
             <span>Closing Celebrations</span>
-          </div>
+            </div>
         </div>
       )
     }

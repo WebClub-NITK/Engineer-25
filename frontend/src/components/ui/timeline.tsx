@@ -1,5 +1,5 @@
 "use client";
-import { useScroll, useTransform, motion } from "motion/react";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -79,13 +79,13 @@ const { scrollYProgress } = useScroll({
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white dark:text-white ">
+              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-white dark:text-white text-3d-light">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full text-white">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-white">
+              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-white text-3d-light">
                 {item.title}
               </h3>
               {item.content}{" "}

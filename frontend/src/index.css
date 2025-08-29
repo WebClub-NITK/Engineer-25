@@ -50,3 +50,45 @@ body {
   background: rgba(99, 102, 241, 0.3);
   color: white;
 }
+
+/* 3D Text Depth Effects */
+.text-3d-light {
+  text-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.1),
+    0 2px 0 rgba(255, 255, 255, 0.05),
+    0 3px 0 rgba(255, 255, 255, 0.025);
+}
+
+.text-3d-medium {
+  text-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.15),
+    0 2px 0 rgba(255, 255, 255, 0.1),
+    0 3px 0 rgba(255, 255, 255, 0.05),
+    0 4px 0 rgba(255, 255, 255, 0.025);
+}
+
+.text-3d-strong {
+  text-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.2),
+    0 2px 0 rgba(255, 255, 255, 0.15),
+    0 3px 0 rgba(255, 255, 255, 0.1),
+    0 4px 0 rgba(255, 255, 255, 0.05),
+    0 5px 0 rgba(255, 255, 255, 0.025);
+}
+
+.text-3d-hero {
+  text-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.25),
+    0 2px 0 rgba(255, 255, 255, 0.2),
+    0 3px 0 rgba(255, 255, 255, 0.15),
+    0 4px 0 rgba(255, 255, 255, 0.1),
+    0 5px 0 rgba(255, 255, 255, 0.05),
+    0 6px 0 rgba(255, 255, 255, 0.025);
+}
+
+/* Apply 3D effects to all text by default */
+h1, h2, h3, h4, h5, h6, p, span, div {
+  text-shadow: 
+    0 1px 0 rgba(255, 255, 255, 0.1),
+    0 2px 0 rgba(255, 255, 255, 0.05);
+}

@@ -21,6 +21,7 @@ const router = createBrowserRouter([
       { path: 'sponsors', element: <SponsorsPage /> },
       { path: 'team', element: <TeamPage /> },
       { path: 'schedule', element: <SchedulePage /> },
+      { path: '*', element: <HomePage /> }, // Catch-all route for 404s
     ],
   },
 ])

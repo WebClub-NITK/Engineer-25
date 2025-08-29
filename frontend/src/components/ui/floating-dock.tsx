@@ -122,7 +122,7 @@ function IconContainer({
               initial={{ opacity: 0, y: -6, x: "-50%" }}
               animate={{ opacity: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, y: -4, x: "-50%" }}
-              className="absolute left-1/2 top-full mt-2 w-max max-w-[50vw] truncate rounded-md border border-white/10 bg-white/10 backdrop-blur-md px-2 py-1 text-xs text-white"
+              className="absolute left-1/2 top-full mt-2 w-max max-w-[50vw] truncate rounded-md border border-white/10 bg-white/10 backdrop-blur-md px-2 py-1 text-xs text-white text-3d-light"
             >
               {title}
             </motion.div>

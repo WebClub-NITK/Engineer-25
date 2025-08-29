@@ -72,8 +72,18 @@ export default function Main() {
           >
           
           <div className="min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-center relative px-2 sm:px-4 pt-10 md:pt-16">
+            {/* Logo */}
+            <motion.img
+              src="/images/logo_dark.png"
+              alt="ENGINEER Logo"
+              className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mb-8 opacity-90"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 0.9, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            />
+            
             <h1 className="
-              w-full max-w-[100vw] text-center mx-auto break-words text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.8)]
+              w-full max-w-[100vw] text-center mx-auto break-words text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white text-3d-hero
               leading-tight
             ">
               ENGINEER '25
@@ -92,7 +102,7 @@ export default function Main() {
 
           <div className="relative min-h-screen pb-15 flex flex-col" >
             <div className="h-[30vh] sm:h-[35vh] md:h-[40vh]" />
-            <h1 data-speed="0.9" className="text-4xl sm:text-6xl md:text-8xl text-center font-extrabold text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.8)]">
+            <h1 data-speed="0.9" className="text-4xl sm:text-6xl md:text-8xl text-center font-extrabold text-white text-3d-strong">
               About ENGINEER '25
             </h1>
 
@@ -121,10 +131,10 @@ export default function Main() {
           }
           header={
             <div className="mt-4">
-              <img
-                src="/images/logo.png"
-                alt="logo"
-                className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full shadow-lg"/>
+                          <img
+              src="/images/logo_dark.png"
+              alt="logo"
+              className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full shadow-lg"/>
             </div>
           }
         />
@@ -170,9 +180,9 @@ export default function Main() {
    
     header={
       <>
-        <p>
-          Driven by its motto "Work is Worship," NITK is where innovation meets inspiration. Every October, the campus transforms during Engineer, one of India's largest and most dynamic technical festivals.
-        </p>
+                  <p className="text-white">
+            Driven by its motto "Work is Worship," NITK is where innovation meets inspiration. Every October, the campus transforms during Engineer, one of India's largest and most dynamic technical festivals.
+          </p>
       </>
     }
   />
@@ -186,7 +196,7 @@ export default function Main() {
             <div className="relative min-h-screen pb-24 flex flex-col text-white" >
             
              <div className="h-[30vh] sm:h-[35vh] md:h-[40vh]" />
-            <h1 data-speed="0.9" className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.8)] text-center">
+            <h1 data-speed="0.9" className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white text-3d-strong text-center">
               Schedule
             </h1>
                <Timeline
@@ -253,7 +263,7 @@ export default function Main() {
 
           {/* Get Ready for What's Next */}
           <div className="py-12" >
-            <h1 className="text-3xl sm:text-5xl md:text-7xl my-5 font-extrabold text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.8)] text-center">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl my-5 font-extrabold text-white text-3d-strong text-center">
               <span className="relative inline-block">
                 Get Ready for What's Next
                 <span className="absolute inset-0 rounded-full blur-3xl bg-white/5 animate-pulse"></span>
@@ -265,7 +275,7 @@ export default function Main() {
           </div>
 
           <div className="px-2 sm:px-4 md:px-8 my-35" >
-            <h2 className="text-3xl sm:text-5xl md:text-6xl my-6 font-extrabold text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.8)] text-center">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl my-6 font-extrabold text-white text-3d-strong text-center">
               Sponsors
             </h2>
             <PhotoRelay />
