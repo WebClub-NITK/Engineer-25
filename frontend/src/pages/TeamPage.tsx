@@ -10,33 +10,54 @@ export default function TeamPage() {
         style={{ backgroundImage: "url('/images/main_bg.png')", opacity: 0.45 }}
       />
       
-      {/* Gradient Overlay to improve readability */}
-      <div className="fixed inset-0 -z-5 bg-gradient-to-br from-blue-900/30 via-purple-900/20 to-indigo-900/40" />
-      
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.25, ease: 'easeOut' }}
-        className="p-6 space-y-6 relative z-10"
+        className="p-6 space-y-8 relative z-10 max-w-7xl mx-auto"
       >
-        <h1 className="text-3xl font-semibold text-white">Team & Committees</h1>
+        {/* Enhanced Header */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+            Team & Committees
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
+        </motion.div>
         
-        <div className="text-white/90 text-lg leading-relaxed mb-8">
-          <p className="mb-4">
+        <div className="text-white/90 text-lg leading-relaxed mb-12 text-center max-w-4xl mx-auto">
+          <p className="mb-4 text-xl">
             Engineer '25 is powered by passionate students from various departments who work tirelessly to create 
             an unforgettable experience. Our committees bring together brilliant minds from computer, electrical, 
             and mechanical engineering departments.
           </p>
-          <p>
+          <p className="text-xl">
             Each committee specializes in different aspects of technology and innovation, working together to 
             push the boundaries of what's possible and bring the future to life.
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <Card className="bg-white/10 border-white/30 text-white backdrop-blur-sm shadow-lg hover:bg-white/15 transition-all">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
+            <div className="h-48 relative overflow-hidden">
+              <img 
+                src="/images/engineer.png" 
+                alt="Astro Committee" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
-              <CardTitle className="text-white">Astro Committee</CardTitle>
+              <CardTitle className="text-white text-xl">Astro Committee</CardTitle>
               <CardDescription className="text-white/80">Space & Astronomy</CardDescription>
             </CardHeader>
             <CardContent>
@@ -54,9 +75,17 @@ export default function TeamPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 border-white/30 text-white backdrop-blur-sm shadow-lg hover:bg-white/15 transition-all">
+          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
+            <div className="h-48 relative overflow-hidden">
+              <img 
+                src="/images/engineer2.png" 
+                alt="Technites Committee" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
-              <CardTitle className="text-white">Technites Committee</CardTitle>
+              <CardTitle className="text-white text-xl">Technites Committee</CardTitle>
               <CardDescription className="text-white/80">Magicians After Dark</CardDescription>
             </CardHeader>
             <CardContent>
@@ -74,9 +103,17 @@ export default function TeamPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 border-white/30 text-white backdrop-blur-sm shadow-lg hover:bg-white/15 transition-all">
+          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
+            <div className="h-48 relative overflow-hidden">
+              <img 
+                src="/images/robowars.png" 
+                alt="Tronix Committee" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
-              <CardTitle className="text-white">Tronix Committee</CardTitle>
+              <CardTitle className="text-white text-xl">Tronix Committee</CardTitle>
               <CardDescription className="text-white/80">Electronics & Technology</CardDescription>
             </CardHeader>
             <CardContent>
@@ -93,9 +130,17 @@ export default function TeamPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 border-white/30 text-white backdrop-blur-sm shadow-lg hover:bg-white/15 transition-all">
+          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
+            <div className="h-48 relative overflow-hidden">
+              <img 
+                src="/images/ather.png" 
+                alt="NITK Racing" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
-              <CardTitle className="text-white">NITK Racing</CardTitle>
+              <CardTitle className="text-white text-xl">NITK Racing</CardTitle>
               <CardDescription className="text-white/80">Formula Bharat 2024</CardDescription>
             </CardHeader>
             <CardContent>
@@ -112,9 +157,17 @@ export default function TeamPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 border-white/30 text-white backdrop-blur-sm shadow-lg hover:bg-white/15 transition-all">
+          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
+            <div className="h-48 relative overflow-hidden">
+              <img 
+                src="/images/ather.png" 
+                alt="Baja NITK Racing" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
-              <CardTitle className="text-white">Baja NITK Racing</CardTitle>
+              <CardTitle className="text-white text-xl">Baja NITK Racing</CardTitle>
               <CardDescription className="text-white/80">Off-Road Excellence</CardDescription>
             </CardHeader>
             <CardContent>
@@ -131,9 +184,17 @@ export default function TeamPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 border-white/30 text-white backdrop-blur-sm shadow-lg hover:bg-white/15 transition-all">
+          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
+            <div className="h-48 relative overflow-hidden">
+              <img 
+                src="/images/robowars.png" 
+                alt="Robocon Team" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
-              <CardTitle className="text-white">Robocon Team</CardTitle>
+              <CardTitle className="text-white text-xl">Robocon Team</CardTitle>
               <CardDescription className="text-white/80">Robotic Innovation</CardDescription>
             </CardHeader>
             <CardContent>
@@ -150,7 +211,7 @@ export default function TeamPage() {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   )

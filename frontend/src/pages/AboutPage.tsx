@@ -10,17 +10,6 @@ export default function AboutPage() {
         style={{ backgroundImage: "url('/images/main_bg.png')", opacity: 0.45 }}
       />
       
-      {/* Enhanced Gradient Overlay - removed purple */}
-      <div className="fixed inset-0 -z-5 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-indigo-900/50" />
-      
-      {/* Floating particles effect - blue theme only */}
-      <div className="fixed inset-0 -z-1 overflow-hidden">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-blue-300 rounded-full animate-ping opacity-40"></div>
-        <div className="absolute bottom-40 left-20 w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce opacity-50"></div>
-        <div className="absolute bottom-20 right-10 w-1 h-1 bg-cyan-400 rounded-full animate-pulse opacity-70"></div>
-      </div>
-      
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

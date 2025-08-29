@@ -10,17 +10,6 @@ export default function EventsPage() {
         style={{ backgroundImage: "url('/images/main_bg.png')", opacity: 0.45 }}
       />
       
-      {/* Enhanced Gradient Overlay - removed purple */}
-      <div className="fixed inset-0 -z-5 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-indigo-900/50" />
-      
-      {/* Floating particles effect - blue theme only */}
-      <div className="fixed inset-0 -z-1 overflow-hidden">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-blue-300 rounded-full animate-ping opacity-40"></div>
-        <div className="absolute bottom-40 left-20 w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce opacity-50"></div>
-        <div className="absolute bottom-20 right-10 w-1 h-1 bg-cyan-400 rounded-full animate-pulse opacity-70"></div>
-      </div>
-      
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -43,7 +32,7 @@ export default function EventsPage() {
           </p>
         </motion.div>
         
-        {/* Enhanced Events Grid - removed icons */}
+        {/* Enhanced Events Grid - with images instead of color bands */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,7 +41,14 @@ export default function EventsPage() {
         >
           {/* Major Events */}
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-red-500 to-pink-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/robowars.png" 
+                alt="Robowars" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Robowars</CardTitle>
               <CardDescription className="text-white/80">15kg Wireless Category</CardDescription>
@@ -67,7 +63,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-green-500 to-blue-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/hackathon.png" 
+                alt="Hackathon" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Hackathon</CardTitle>
               <CardDescription className="text-white/80">24-Hour Innovation Sprint</CardDescription>
@@ -82,7 +85,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/robowars.png" 
+                alt="Robocon Bot Expo" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Robocon Bot Expo</CardTitle>
               <CardDescription className="text-white/80">Robotic Innovation Showcase</CardDescription>
@@ -97,7 +107,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-yellow-500 to-orange-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/bulb.png" 
+                alt="Tech Mela" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Tech Mela</CardTitle>
               <CardDescription className="text-white/80">Innovation Celebration</CardDescription>
@@ -112,7 +129,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/ather.png" 
+                alt="Racing Cars" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Racing Cars</CardTitle>
               <CardDescription className="text-white/80">Formula Bharat 2024</CardDescription>
@@ -127,7 +151,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-emerald-500 to-teal-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/ather.png" 
+                alt="Baja NITK" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Baja NITK</CardTitle>
               <CardDescription className="text-white/80">Off-Road Racing</CardDescription>
@@ -142,7 +173,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/pc.png" 
+                alt="ENGI Talks" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">ENGI Talks</CardTitle>
               <CardDescription className="text-white/80">Industry Expert Sessions</CardDescription>
@@ -157,7 +195,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/engineer.png" 
+                alt="Workshops" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Workshops</CardTitle>
               <CardDescription className="text-white/80">Hands-on Learning</CardDescription>
@@ -173,7 +218,14 @@ export default function EventsPage() {
           </Card>
 
           <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group overflow-hidden">
-            <div className="h-2 bg-gradient-to-r from-slate-500 to-gray-500"></div>
+            <div className="h-32 relative overflow-hidden">
+              <img 
+                src="/images/engineer2.png" 
+                alt="Other Events" 
+                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            </div>
             <CardHeader>
               <CardTitle className="text-white text-xl">Other Events</CardTitle>
               <CardDescription className="text-white/80">Line Tracker, Bot Race, Wright Flight</CardDescription>
