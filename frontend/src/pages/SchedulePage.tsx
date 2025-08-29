@@ -4,61 +4,163 @@ import { Timeline } from '@/components/ui/timeline'
 export default function SchedulePage() {
   const scheduleData = [
     {
-      title: 'ENGI DAY 0 — September 26',
+      title: 'ENGI DAY 0 — October 2025',
       content: (
-        <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-md p-6 shadow-lg text-neutral-800 dark:text-neutral-200">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm tracking-wide text-neutral-500 dark:text-neutral-400">Orientation & Pre‑events</span>
-            <span className="text-xs text-neutral-500 dark:text-neutral-400">Day 0</span>
+        <div className="rounded-xl border border-white/20 bg-white/15 backdrop-blur-md p-8 shadow-2xl text-white">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Orientation & Pre‑events</span>
+            <span className="text-sm text-white/80 bg-blue-500/20 px-3 py-1 rounded-full border border-blue-400/30">Day 0</span>
           </div>
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300">
-            Kickoff, registrations, and fun ice‑breaker activities. Get your badges and settle in.
+          <p className="text-base text-white/95 leading-relaxed">
+            Kickoff, registrations, and fun ice‑breaker activities. Get your badges and settle in for the four-day celebration of technology and creativity.
           </p>
+          <div className="mt-4 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+            <span>Registration & Check-in</span>
+          </div>
+          <div className="mt-2 flex items-center gap-2 text-blue-300 text-sm">
+            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+            <span>Welcome Session</span>
+          </div>
         </div>
       )
     },
     {
-      title: 'ENGI DAY 1 — September 27',
+      title: 'ENGI DAY 1 — October 2025',
       content: (
-        <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-md p-6 shadow-lg text-neutral-800 dark:text-neutral-200">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm tracking-wide text-neutral-500 dark:text-neutral-400">Talks • Workshops • Rounds</span>
-            <span className="text-xs text-neutral-500 dark:text-neutral-400">Day 1</span>
+        <div className="rounded-xl border border-white/20 bg-white/15 backdrop-blur-md p-8 shadow-2xl text-white">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">Workshops • Talks • Learning</span>
+            <span className="text-sm text-white/80 bg-green-500/20 px-3 py-1 rounded-full border border-green-400/30">Day 1</span>
           </div>
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300">
-            Hands‑on sessions, lightning talks, and multiple technical rounds.
+          <p className="text-base text-white/95 leading-relaxed">
+            Hands‑on sessions, lightning talks, and multiple technical rounds. Experience workshops led by industry experts, acclaimed NITK professors, and passionate student clubs.
           </p>
+          <div className="mt-4 flex items-center gap-2 text-green-300 text-sm">
+            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+            <span>Technical Workshops</span>
+          </div>
+          <div className="mt-2 flex items-center gap-2 text-green-300 text-sm">
+            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+            <span>Expert Keynotes</span>
+          </div>
         </div>
       )
     },
     {
-      title: 'ENGI DAY 2 — September 28',
+      title: 'ENGI DAY 2 — October 2025',
       content: (
-        <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-md p-6 shadow-lg text-neutral-800 dark:text-neutral-200">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm tracking-wide text-neutral-500 dark:text-neutral-400">Finals • Showcase • Closing</span>
-            <span className="text-xs text-neutral-500 dark:text-neutral-400">Day 2</span>
+        <div className="rounded-xl border border-white/20 bg-white/15 backdrop-blur-md p-8 shadow-2xl text-white">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Competitions • Showcase</span>
+            <span className="text-sm text-white/80 bg-yellow-500/20 px-3 py-1 rounded-full border border-yellow-400/30">Day 2</span>
           </div>
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300">
-            Final rounds, demos, and the closing ceremony with awards.
+          <p className="text-base text-white/95 leading-relaxed">
+            Major competitions including Robowars, Hackathon, Bot Expo, and Tech Mela. Witness cutting-edge robotics, innovative solutions, and breakthrough projects.
           </p>
+          <div className="mt-4 flex items-center gap-2 text-yellow-300 text-sm">
+            <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+            <span>Robowars Finals</span>
+          </div>
+          <div className="mt-2 flex items-center gap-2 text-yellow-300 text-sm">
+            <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+            <span>Hackathon Presentations</span>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: 'ENGI DAY 3 — October 2025',
+      content: (
+        <div className="rounded-xl border border-white/20 bg-white/15 backdrop-blur-md p-8 shadow-2xl text-white">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-lg tracking-wide text-white font-bold bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">Finals • Awards • Closing</span>
+            <span className="text-sm text-white/80 bg-red-500/20 px-3 py-1 rounded-full border border-red-400/30">Day 3</span>
+          </div>
+          <p className="text-base text-white/95 leading-relaxed">
+            Final rounds, project demos, and the grand closing ceremony with awards. Celebrate innovation and recognize the brilliant minds behind groundbreaking creations.
+          </p>
+          <div className="mt-4 flex items-center gap-2 text-red-300 text-sm">
+            <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+            <span>Awards Ceremony</span>
+          </div>
+          <div className="mt-2 flex items-center gap-2 text-red-300 text-sm">
+            <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+            <span>Closing Celebrations</span>
+          </div>
         </div>
       )
     }
   ]
+  
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.25, ease: 'easeOut' }}
-      className="p-6 space-y-6"
-    >
-      <h1 className="text-3xl font-semibold text-white">Schedule</h1>
-      <Timeline
-        data={scheduleData}
-        headerTitle="Event Timeline"
-        headerDescription="A clean, minimal timeline in black, white, and glass."
+    <div className="relative min-h-screen">
+      {/* Background Image */}
+      <div
+        className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/main_bg.png')", opacity: 0.45 }}
       />
-    </motion.div>
+      
+      {/* Enhanced Gradient Overlay - removed purple */}
+      <div className="fixed inset-0 -z-5 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-indigo-900/50" />
+      
+      {/* Floating particles effect - blue theme only */}
+      <div className="fixed inset-0 -z-1 overflow-hidden">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
+        <div className="absolute top-40 right-20 w-1 h-1 bg-blue-300 rounded-full animate-ping opacity-40"></div>
+        <div className="absolute bottom-40 left-20 w-1.5 h-1.5 bg-indigo-400 rounded-full animate-bounce opacity-50"></div>
+        <div className="absolute bottom-20 right-10 w-1 h-1 bg-cyan-400 rounded-full animate-pulse opacity-70"></div>
+      </div>
+      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+        className="p-6 space-y-8 relative z-10 max-w-6xl mx-auto"
+      >
+        {/* Enhanced Header */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+            Schedule
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
+        </motion.div>
+        
+        {/* Enhanced Description */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-white/95 text-lg leading-relaxed mb-12 text-center max-w-4xl mx-auto"
+        >
+          <p className="mb-4 text-xl">
+            Engineer '25 is a four-day celebration of technology and creativity, taking place every October at NITK Surathkal. 
+            The event draws over 6,000 participants from 150 colleges across 65 countries.
+          </p>
+          <p className="text-xl">
+            From coding marathons and robotics showdowns to immersive workshops and branch-specific competitions, 
+            each day offers unique opportunities to learn, compete, and innovate.
+          </p>
+        </motion.div>
+        
+        {/* Enhanced Timeline */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <Timeline
+            data={scheduleData}
+            headerTitle="Event Timeline"
+            headerDescription="A comprehensive four-day journey through innovation, creativity, and technological excellence."
+          />
+        </motion.div>
+      </motion.div>
+    </div>
   )
 }
