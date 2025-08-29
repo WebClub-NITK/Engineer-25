@@ -1,4 +1,14 @@
 
+"use client";
+import { IconArrowNarrowRight } from "@tabler/icons-react";
+import { useState, useRef, useId, useEffect } from "react";
+
+interface SlideData {
+  title: string;
+  button: string;
+  src: string;
+}
+
 const slides: SlideData[] = [
   {
     title: "Robowars: Arena Showdown",
@@ -27,17 +37,6 @@ const slides: SlideData[] = [
   },
 ];
 
-
-"use client";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
-import { useState, useRef, useId, useEffect } from "react";
-
-interface SlideData {
-  title: string;
-  button: string;
-  src: string;
-}
-
 interface SlideProps {
   slide: SlideData;
   index: number;
@@ -50,7 +49,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
   const xRef = useRef(0);
   const yRef = useRef(0);
-  const frameRef = useRef<number>();
+  const frameRef = useRef<number | undefined>(undefined); // Fixed: added initial value
 
   useEffect(() => {
     const animate = () => {
