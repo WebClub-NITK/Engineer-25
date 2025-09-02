@@ -11,29 +11,69 @@ interface SlideData {
 
 const slides: SlideData[] = [
   {
-    title: "Robowars: Arena Showdown",
+    title: "Robowars",
     button: "Learn More",
     src: "/images/robowars.png",
   },
   {
-    title: "Start-Up Pitch Sessions",
-    button: "Get Involved",
-    src: "/images/pitch.png",
-  },
-  {
-    title: "Tech Conflux: Unite & Innovate",
-    button: "Join Now",
-    src: "/images/conflux.png",
-  },
-  {
-    title: "Hackathons & Coding Challenges",
-    button: "See Challenges",
+    title: "The Engineer Hackathon",
+    button: "Learn More",
     src: "/images/hackathon.png",
   },
   {
-    title: "Cultural Events Extravaganza",
-    button: "View Highlights",
-    src: "/images/cultural.png",
+    title: "Robocon Bot Expo",
+    button: "Learn More",
+    src: "/images/robocon_expo.png",
+  },
+  {
+    title: "Engi talks",
+    button: "Learn More",
+    src: "/images/engi_talks.png",
+  },
+  {
+    title: "Workshops",
+    button: "Learn More",
+    src: "/images/workshops.png",
+  },
+  {
+    title: "Line Tracker Bot Race",
+    button: "Learn More",
+    src: "/images/line_tracker_bot_race.png",
+  },
+  {
+    title: "Robo Soccer",
+    button: "Learn More",
+    src: "/images/robo_soccer.png",
+  },
+  {
+    title: "Wright Flight",
+    button: "Learn More",
+    src: "/images/wright_flight.png",
+  },
+  {
+    title: "Drone Race",
+    button: "Learn More",
+    src: "/images/drone_race.png",
+  },
+  {
+    title: "Robo Racing",
+    button: "Learn More",
+    src: "/images/robo_racing.png",
+  },
+  {
+    title: "Open House Labs",
+    button: "Learn More",
+    src: "/images/open_house_labs.png",
+  },
+  {
+    title: "Tech/Space Quizzers",
+    button: "Learn More",
+    src: "/images/tech_space_quizzers.png",
+  },
+  {
+    title: "Beach Event",
+    button: "Learn More",
+    src: "/images/beach_event.png",
   },
 ];
 
@@ -75,9 +115,9 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
 
 
-  const imageLoaded = (event: React.SyntheticEvent<HTMLImageElement>) => {
-    event.currentTarget.style.opacity = "1";
-  };
+  const [loaded, setLoaded] = useState(false);
+
+
 
   const { src, button, title } = slide;
 
@@ -87,7 +127,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         ref={slideRef}
         className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[50vmin] h-[50vmin] mx-[4vmin] z-10 "
         onClick={() => handleSlideClick(index)}
-       
+
         style={{
           transform:
             current !== index
@@ -98,31 +138,31 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out backdrop-blur-lg"
-         
+          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-xl overflow-hidden transition-all duration-150 ease-out backdrop-blur-lg"
+
         >
-              <div className="absolute inset-0 bg-black/0 z-10"></div>
+          <div className="absolute inset-0 bg-black/0 z-10"></div>
           <img
-            className="absolute inset-0 w-[100%] h-[100%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+            className="absolute inset-0 w-[100%] h-[100%] object-fit transition-opacity duration-600 ease-in-out"
             style={{
-              opacity: current === index ? 0.5 : 0.8,
+              opacity: loaded ? (current === index ? 0.5 : 0.8) : 0, // fade from 0
               boxShadow: "0 4px 20px rgba(248, 248, 248, 0.5)",
             }}
             alt={title}
             src={src}
-            onLoad={imageLoaded}
+            onLoad={() => setLoaded(true)}
             loading="eager"
             decoding="sync"
           />
+
           {current === index && (
             <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
           )}
         </div>
 
         <article
-          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
-            current === index ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
+          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${current === index ? "opacity-100 visible" : "opacity-0 invisible"
+            }`}
         >
           <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold relative text-white text-3d-light">
             {title}
@@ -151,9 +191,8 @@ const CarouselControl = ({
 }: CarouselControlProps) => {
   return (
     <button
-      className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none  ${
-        type === "previous" ? "rotate-180" : ""
-      }`}
+      className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none  ${type === "previous" ? "rotate-180" : ""
+        }`}
       title={title}
       onClick={handleClick}
     >

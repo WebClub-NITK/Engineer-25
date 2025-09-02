@@ -19,7 +19,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src'),
        nanoid: 'nanoid/index.browser.js',
-      crypto: 'crypto-browserify',
+
       stream: 'stream-browserify'
     },
    

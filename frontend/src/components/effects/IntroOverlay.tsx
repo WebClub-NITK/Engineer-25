@@ -280,7 +280,7 @@ export default function IntroOverlay({
                     onClick={onFancyEnter}
                     variant="outline"
                     size="lg"
-                    className="rounded-full px-8 py-4 text-lg border-neutral-300 bg-white text-neutral-900 shadow-[0_0_20px_rgba(0,0,0,0.08)] hover:shadow-[0_0_40px_rgba(0,0,0,0.18)] hover:scale-[1.03] transition-transform text-3d-light"
+                    className="rounded-full px-8 py-4 text-lg border-neutral-300 bg-white text-neutral-900 shadow-[0_0_20px_rgba(0,0,0,0.08)] hover:shadow-[0_0_40px_rgba(0,0,0,0.18)] hover:scale-[1.03] transition-transform cursor-pointer"
                   >
                     ENTER THE QUANTUM REALM
                   </MotionButton>
