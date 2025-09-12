@@ -75,6 +75,11 @@ const slides: SlideData[] = [
     button: "Learn More",
     src: "/images/beach_event.png",
   },
+  {
+    title: "Tech Mela",
+    button: "Learn More",
+    src: "/images/tech_mela.jpg",
+  },
 ];
 
 interface SlideProps {

@@ -26,7 +26,7 @@ export default function EventsPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent text-3d-strong">
             Events
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
+      
           <p className="text-white/80 text-xl mt-4 max-w-2xl mx-auto">
             Discover the exciting world of technology, innovation, and engineering excellence at Engineer '25
           </p>

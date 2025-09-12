@@ -58,7 +58,7 @@ export default function Main() {
 
       <div ref={smoothWrapperRef} id="smooth-wrapper" >
         <div
-          className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+          className="fixed min-h-screen inset-0 -z-10 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/main_bg.png')", opacity: 0.45 }}
         />
 
@@ -76,17 +76,17 @@ export default function Main() {
               className="w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 mb-8 opacity-90"
             />
 
-            <h1 className="w-full max-w-[100vw] text-center mx-auto break-words text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight">
+            <h1 className="w-full max-w-[100vw] text-center mx-auto break-words text-4xl lg:text-8xl font-extrabold text-white leading-tight drop-shadow-[0_0_25px_rgba(255,255,255,0.4)] ">
               ENGINEER '25
             </h1>
 
-            {!introVisible && (<div className="mt-4 w-full max-w-2xl mx-auto px-2 sm:px-0 text-base sm:text-lg md:text-2xl text-center text-white/90 leading-snug"> <TextGenerateEffect words="The Annual Technical Fest of NIT Karnataka - Where Innovation Meets Inspiration" duration={3} /> </div>)} </div>
+            {!introVisible && (<div className="mt-4 w-full max-w-2xl mx-auto px-2 sm:px-0 text-base text-lg lg:text-2xl text-center text-white/90 leading-snug"> <TextGenerateEffect words="The Annual Technical Fest of NIT Karnataka - Where Innovation Meets Inspiration" duration={3} /> </div>)} </div>
 
 
           <div className="relative min-h-screen pb-15 flex flex-col" >
             <div className="h-[30vh] sm:h-[35vh] md:h-[40vh]" />
-            <h1 data-speed="0.9" className="text-4xl sm:text-6xl md:text-8xl text-center font-extrabold text-white text-3d-strong">
-              About ENGINEER '25
+            <h1 data-speed="0.9" className="text-4xl sm:text-6xl md:text-8xl text-center font-extrabold text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.4)] ">
+              About ENGINEER 25
             </h1>
 
             {/* Bento Grid Section */}
@@ -193,7 +193,7 @@ export default function Main() {
           <div className="relative min-h-screen pb-24 flex flex-col text-white" >
 
             <div className="h-[30vh] sm:h-[35vh] md:h-[40vh]" />
-            <h1 data-speed="0.9" className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white text-3d-strong text-center">
+            <h1 data-speed="0.9" className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]  text-center">
               Schedule
             </h1>
             <Timeline
@@ -260,7 +260,7 @@ export default function Main() {
 
           {/* Get Ready for What's Next */}
           <div className="py-12" >
-            <h1 className="text-3xl sm:text-5xl md:text-7xl my-5 font-extrabold text-white text-3d-strong text-center">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl my-5 font-extrabold text-white text-3d-strong text-center drop-shadow-[0_0_25px_rgba(255,255,255,0.4)] ">
               <span className="relative inline-block">
                 Get Ready for What's Next
                 <span className="absolute inset-0 rounded-full blur-3xl bg-white/5 animate-pulse"></span>
@@ -272,10 +272,20 @@ export default function Main() {
           </div>
 
           <div className="px-2 sm:px-4 md:px-8 my-35" >
-            <h2 className="text-3xl sm:text-5xl md:text-6xl my-6 font-extrabold text-white text-3d-strong text-center">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl my-6 font-extrabold text-white text-3d-strong text-center drop-shadow-[0_0_25px_rgba(255,255,255,0.4)] ">
               Sponsors
             </h2>
-            <PhotoRelay />
+            <PhotoRelay images={
+              [{ id: 1, src: "/images/logos/devfolio.png", title: "Devfolio" },
+              { id: 2, src: "/images/logos/cisco.png", title: "Cisco" },
+              { id: 3, src: "/images/logos/unacademy.png", title: "Unacademy" },
+              { id: 4, src: "/images/logos/icici.png", title: "ICICI Bank" },
+              { id: 5, src: "/images/logos/dell.png", title: "Dell" },
+              { id: 6, src: "/images/logos/ather.png", title: "Ather" },
+              { id: 7, src: "/images/logos/unstop.png", title: "Unstop" },
+              { id: 8, src: "/images/logos/decathlon.png", title: "Decathlon" },
+              { id: 9, src: "/images/logos/bosch.png", title: "Bosch" },]
+            } direction="left" speed={30} />
           </div>
           <Footer />
 

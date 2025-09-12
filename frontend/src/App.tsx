@@ -18,7 +18,7 @@ export default function App() {
           items={[
             { title: 'Home', icon: <IconHome className="text-white" />, href: '/' },
             { title: 'About', icon: <IconInfoCircle className="text-white" />, href: '/about' },
-            { title: 'Events', icon: <IconCalendarEvent className="text-white" />, href: '/events' },
+            // { title: 'Events', icon: <IconCalendarEvent className="text-white" />, href: '/events' },
             { title: 'Schedule', icon: <IconTimeline className="text-white" />, href: '/schedule' },
             { title: 'Team', icon: <IconUsers className="text-white" />, href: '/team' },
             { title: 'Sponsors', icon: <IconBuildingSkyscraper className="text-white" />, href: '/sponsors' },

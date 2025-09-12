@@ -117,7 +117,7 @@ export default function SchedulePage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
             Schedule
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
+      
         </motion.div>
         
         {/* Enhanced Description */}

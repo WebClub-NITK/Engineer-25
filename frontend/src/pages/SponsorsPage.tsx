@@ -1,164 +1,94 @@
-import { motion } from 'framer-motion'
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import PhotoRelay from '@/components/PhotoRelay'
+import type {ImageData} from '@/components/PhotoRelay'
 
 export default function SponsorsPage() {
+ const logos1: ImageData[] = [
+  { id: 1, src: "/images/logos/decathlon.png", title: "Decathlon" },
+  { id: 2, src: "/images/logos/hdfc.png", title: "HDFC Bank" },
+  { id: 3, src: "/images/logos/volvo.png", title: "Volvo" },
+  { id: 4, src: "/images/logos/devfolio.png", title: "Devfolio" },
+  { id: 5, src: "/images/logos/ather.png", title: "Ather" },
+{ id: 6, src: "/images/logos/toi.png", title: "Times of India" },
+  { id: 7, src: "/images/logos/cisco.png", title: "Cisco" },
+  { id: 8, src: "/images/logos/unacademy.png", title: "Unacademy" },
+    { id: 9, src: "/images/logos/monster.jpeg", title: "Monster Energy" },
+  { id: 10, src: "/images/logos/iesmaster.png", title: "IES Master" },
+  { id: 11, src: "/images/logos/aequs.jpeg", title: "Aequs" },
+  { id: 12, src: "/images/logos/dell.png", title: "Dell" },
+  { id: 13, src: "/images/logos/bosch.png", title: "Bosch" },
+  { id: 14, src: "/images/logos/intel.jpeg", title: "Intel" },
+  { id: 15, src: "/images/logos/bigfm.jpeg", title: "Big FM" },
+]
+
+const logos2: ImageData[] = [
+  { id: 16, src: "/images/logos/tata.jpeg", title: "Tata" },
+  { id: 17, src: "/images/logos/royalenfield.png", title: "Royal Enfield" },
+  { id: 18, src: "/images/logos/ibm.png", title: "IBM" },
+  { id: 19, src: "/images/logos/canara.png", title: "Canara Bank" },
+  { id: 20, src: "/images/logos/zebronics.jpeg", title: "Zebronics" },
+  { id: 21, src: "/images/logos/sbi.png", title: "SBI" },
+  { id: 22, src: "/images/logos/time.png", title: "TIME" },
+  { id: 23, src: "/images/logos/sap.png", title: "SAP" },
+  { id: 24, src: "/images/logos/reliance.jpeg", title: "Reliance Industries" },
+  { id: 25, src: "/images/logos/lic.png", title: "LIC" },
+  { id: 26, src: "/images/logos/cfa.png", title: "CFA Institute" },
+
+]
+
+const logos3: ImageData[] = [
+  { id: 28, src: "/images/logos/imfs.jpeg", title: "IMFS" },
+  { id: 29, src: "/images/logos/easemytrip.png", title: "EaseMyTrip" },
+  { id: 30, src: "/images/logos/wellsfargo.png", title: "Wells Fargo" },
+  { id: 31, src: "/images/logos/coursehero.png", title: "Course Hero" },
+  { id: 32, src: "/images/logos/beardo.png", title: "Beardo" },
+  { id: 33, src: "/images/logos/mescom.png", title: "Mescom" },
+  { id: 34, src: "/images/logos/skmepl.jpeg", title: "SKMEPL" },
+  { id: 35, src: "/images/logos/icici.png", title: "ICICI Bank" },
+  { id: 36, src: "/images/logos/stockgro.jpeg", title: "StockGro" },
+  { id: 37, src: "/images/logos/unstop.png", title: "Unstop" },
+  { id: 38, src: "/images/logos/bob.png", title: "Bank of Baroda" },
+  { id: 39, src: "/images/logos/moxx.jpeg", title: "Moxx Entertainments" },
+  { id: 40, src: "/images/logos/tribevibe.jpeg", title: "TribeVibe" },
+  { id: 41, src: "/images/logos/kreativekeda.png", title: "Kreative Keda" },
+
+]
+
+
   return (
-    <div className="relative min-h-screen">
-      {/* Background Image */}
-      <div
-        className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/main_bg.png')", opacity: 0.45 }}
-      />
-      
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="p-6 space-y-8 relative z-10 max-w-7xl mx-auto"
-      >
-        {/* Enhanced Header */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent text-3d-strong">
-            Sponsors
-          </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
-        </motion.div>
-        
-        {/* Enhanced Description */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-white/95 text-lg leading-relaxed mb-12 text-center max-w-4xl mx-auto"
-        >
-          <p className="mb-4 text-xl">
-            Engineer '25 is proud to have the support of industry leaders and organizations who share our vision 
-            of fostering innovation and technological excellence.
-          </p>
-          <p className="text-xl">
-            Our sponsors play a crucial role in making this four-day celebration of technology and creativity possible, 
-            enabling us to provide world-class experiences to over 6,000 participants from 150 colleges across 65 countries.
-          </p>
-        </motion.div>
+    <div className="flex flex-col space-y-10">
+       <div
+          className="fixed min-h-screen inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/main_bg.png')", opacity: 0.45 }}
+        />
+  
+<div className="flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
 
-        {/* Enhanced Legacy Sponsors */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl">
-            <CardHeader className="text-center">
-              <CardTitle className="text-white text-3xl mb-2">Our Legacy Sponsors</CardTitle>
-              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-white/95 mb-8 text-center text-lg">
-                We thank our past sponsors for their invaluable support and collaboration in making Engineer 
-                one of India's largest and most dynamic technical festivals.
-              </p>
-              
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                {Array.from({ length: 8 }).map((_, i) => (
-                  <div key={i} className="aspect-[3/1] rounded-xl border border-white/30 bg-white/20 flex items-center justify-center text-white/90 text-sm font-medium hover:bg-white/30 transition-all duration-300 backdrop-blur-sm hover:scale-105 hover:shadow-lg">
-                    Legacy Sponsor {i + 1}
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+    Our Sponsors
+  </h1>
 
-        {/* Enhanced Global Collaborators */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl">
-            <CardHeader className="text-center">
-              <CardTitle className="text-white text-3xl mb-2">Global Collaborators</CardTitle>
-              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-white/95 mb-8 text-center text-lg">
-                Engineer has had the privilege of collaborating with prestigious institutions and organizations worldwide:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-6 rounded-xl bg-white/20 border border-white/30 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                  <h3 className="font-bold text-white text-xl mb-3">CERN</h3>
-                  <p className="text-white/80 text-base">European Organization for Nuclear Research</p>
-                  <div className="mt-3 w-8 h-1 bg-blue-400 mx-auto rounded-full"></div>
-                </div>
-                <div className="text-center p-6 rounded-xl bg-white/20 border border-white/30 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                  <h3 className="font-bold text-white text-xl mb-3">MIT Lab</h3>
-                  <p className="text-white/80 text-base">Massachusetts Institute of Technology</p>
-                  <div className="mt-3 w-8 h-1 bg-blue-400 mx-auto rounded-full"></div>
-                </div>
-                <div className="text-center p-6 rounded-xl bg-white/20 border border-white/30 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                  <h3 className="font-bold text-white text-xl mb-3">Bell Labs</h3>
-                  <p className="text-white/80 text-base">Nokia Bell Laboratories</p>
-                  <div className="mt-3 w-8 h-1 bg-blue-400 mx-auto rounded-full"></div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
+ 
+  <div className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed my-5 max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto text-center sm:text-justify">
+    <p className="mb-4">
+      Engineer '25 is proud to have the support of industry leaders and organizations who share
+      our vision of fostering innovation and technological excellence.
+    </p>
 
-        {/* Enhanced Become a Sponsor */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.0 }}
-        >
-          <Card className="bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl">
-            <CardHeader className="text-center">
-              <CardTitle className="text-white text-3xl mb-2">Become a Sponsor</CardTitle>
-              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-white/95 mb-6 text-center text-lg">
-                Join us in fostering the next generation of innovators and engineers. Your support helps us:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <ul className="text-white/90 space-y-3 text-lg">
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                    <span>Provide world-class workshop experiences</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                    <span>Host cutting-edge competitions and events</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                    <span>Bring industry experts and thought leaders</span>
-                  </li>
-                </ul>
-                <ul className="text-white/90 space-y-3 text-lg">
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                    <span>Create opportunities for students across India and the world</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                    <span>Promote sustainability and social impact through technology</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                    <span>Build lasting partnerships in innovation</span>
-                  </li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
-      </motion.div>
+    <p className="mb-4">
+      Our sponsors play a crucial role in making this four-day celebration of technology and
+      creativity possible, enabling us to provide world-class experiences to over 6,000
+      participants from 150 colleges across 65 countries.
+    </p>
+
+    <p className="mb-4 text-lg sm:text-xl md:text-2xl font-semibold text-center">
+      We thank our past sponsors for their invaluable support and collaboration.
+    </p>
+  </div>
+</div>
+
+      <PhotoRelay images={logos1} direction="left" speed={30} />
+      <PhotoRelay images={logos2} direction="right" speed={35} />
+      <PhotoRelay images={logos3} direction="left" speed={25} />
     </div>
   )
 }
