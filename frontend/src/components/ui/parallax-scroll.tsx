@@ -20,7 +20,7 @@ export const ParallaxScroll = ({
     position: string;
   }) => (
     <div className="flex flex-col bg-white/15 border-white/40 text-white backdrop-blur-md shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105 group rounded-2xl overflow-hidden min-h-[25rem]">
-      <img src={image} alt={name} className="w-full h-[18rem] object-cover" />
+      <img src={image} alt={name} className="w-full h-[20rem] object-fit" />
       <div className="p-4 flex flex-col items-center">
         <div className="text-lg font-semibold ">{name}</div>
         <div className="text-md ">{position}</div>
@@ -60,7 +60,7 @@ export const ParallaxScroll = ({
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto py-10 px-10"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto py-5 px-10"
       >
         {members.map((member, idx) => (
           <Card key={idx} {...member} />

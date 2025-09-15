@@ -2,7 +2,7 @@ import './App.css'
 import { Outlet, useLocation } from 'react-router-dom'
 import Footer from '@/components/Footer'
 import { FloatingDock } from '@/components/ui/floating-dock'
-import { IconHome, IconInfoCircle, IconUsers, IconBuildingSkyscraper, IconTimeline, IconCalendarEvent } from '@tabler/icons-react'
+import { IconHome, IconInfoCircle, IconUsers, IconBuildingSkyscraper, IconCalendarEvent } from '@tabler/icons-react'
 
 export default function App() {
   const location = useLocation()
@@ -18,8 +18,7 @@ export default function App() {
           items={[
             { title: 'Home', icon: <IconHome className="text-white" />, href: '/' },
             { title: 'About', icon: <IconInfoCircle className="text-white" />, href: '/about' },
-            // { title: 'Events', icon: <IconCalendarEvent className="text-white" />, href: '/events' },
-            { title: 'Schedule', icon: <IconTimeline className="text-white" />, href: '/schedule' },
+            { title: 'Schedule', icon: <IconCalendarEvent className="text-white" />, href: '/schedule' },
             { title: 'Team', icon: <IconUsers className="text-white" />, href: '/team' },
             { title: 'Sponsors', icon: <IconBuildingSkyscraper className="text-white" />, href: '/sponsors' },
           ]}
