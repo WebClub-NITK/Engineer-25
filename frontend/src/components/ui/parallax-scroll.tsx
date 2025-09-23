@@ -31,7 +31,7 @@ export const ParallaxScroll = ({
   return (
     <div
       className={cn(
-        "h-[40rem] overflow-y-auto w-full relative",
+        "min-h-screen w-full relative",
         className
       )}
     >

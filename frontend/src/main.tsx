@@ -8,6 +8,7 @@ import AboutPage from '@/pages/AboutPage'
 import SponsorsPage from '@/pages/SponsorsPage'
 import TeamPage from '@/pages/TeamPage'
 import SchedulePage from '@/pages/SchedulePage'
+import EventsPage from '@/pages/EventsPage'
 
 const router = createBrowserRouter([
   {
@@ -16,9 +17,9 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'about', element: <AboutPage /> },
-      // { path: 'events', element: <EventsPage /> },
       { path: 'sponsors', element: <SponsorsPage /> },
       { path: 'team', element: <TeamPage /> },
+      { path: 'events', element: <EventsPage /> },
       { path: 'schedule', element: <SchedulePage /> },
       { path: '*', element: <HomePage /> }, // Catch-all route for 404s
     ],

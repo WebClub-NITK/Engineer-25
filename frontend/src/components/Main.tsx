@@ -14,8 +14,6 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 import Footer from "@/components/Footer"
 import Carousel from "@/components/ui/carousel"
 
-
-
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 }
@@ -25,6 +23,7 @@ export default function Main() {
   const smoothWrapperRef = useRef<HTMLDivElement>(null)
   const smoothContentRef = useRef<HTMLDivElement>(null)
   const [introVisible, setIntroVisible] = useState(true)
+
   const smootherRef = useRef<ReturnType<typeof ScrollSmoother.create> | null>(null)
 
   useEffect(() => {
@@ -48,7 +47,6 @@ export default function Main() {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-
       {introVisible && (
         <IntroOverlay
           initialVisible={introVisible}
@@ -70,6 +68,7 @@ export default function Main() {
         >
 
           <div className="h-screen flex flex-col items-center justify-center relative px-2 sm:px-4 pt-10 md:pt-16 overflow-hidden">
+
             <img
               src="/images/logo.png"
               alt="ENGINEER Logo"
@@ -80,7 +79,7 @@ export default function Main() {
               ENGINEER '25
             </h1>
 
-            {!introVisible && (<div className="mt-4 w-full max-w-2xl mx-auto px-2 sm:px-0 text-base text-lg lg:text-2xl text-center text-white/90 leading-snug"> <TextGenerateEffect words="The Annual Technical Fest of NIT Karnataka - Where Innovation Meets Inspiration" duration={3} /> </div>)} </div>
+            {!introVisible && (<div className="mt-4 w-full max-w-2xl mx-auto px-2 sm:px-0 text-base text-lg lg:text-2xl text-center text-white/90 leading-snug">  <TextGenerateEffect words="Think • Create • Engineer" duration={1} /> <TextGenerateEffect words="The Annual Technical Fest of NIT Karnataka - Where Innovation Meets Inspiration" duration={3} /> </div>)} </div>
 
 
           <div className="relative min-h-screen pb-15 flex flex-col" >
@@ -203,11 +202,11 @@ export default function Main() {
                   content: (
                     <div className="rounded-xl bg-white/5 border-1 border-[#5054CC] shadow-[0_0_20px_2px_rgba(127,95,255,0.33)] backdrop-blur-3xl p-6 shadow-lg text-white ">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm tracking-wide text-white font-bold">Orientation & Pre‑events</span>
+                        <span className="text-sm tracking-wide text-white font-bold">Inauguration & Pre‑events</span>
                         <span className="text-xs text-white ">Day 0</span>
                       </div>
                       <p className="text-sm md:text-base text-white">
-                        Kickoff, registrations, and ice‑breaker activities. Get your badges and settle in for the four-day celebration.
+                        Genesis Dance, Laser Show, Movie Screening
                       </p>
                     </div>
                   ),
@@ -217,11 +216,11 @@ export default function Main() {
                   content: (
                     <div className="rounded-xl bg-white/5 border-1 border-[#5054CC] shadow-[0_0_20px_2px_rgba(127,95,255,0.33)] backdrop-blur-3xl p-6 shadow-lg text-white ">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm tracking-wide text-white font-bold">Workshops • Talks • Learning</span>
+                        <span className="text-sm tracking-wide text-white font-bold">Workshops • Hackathons • Quizzes • Fun Events </span>
                         <span className="text-xs text-white">Day 1</span>
                       </div>
                       <p className="text-sm md:text-base text-white">
-                        Hands‑on workshops led by industry experts, acclaimed NITK professors, and passionate student clubs.
+                        Avishkar, Techgyan Workshop, Sim2Real & Software Hackathons, Robowars, MC Night, Astro Quiz, IPL Auction and many more!
                       </p>
                     </div>
                   ),
@@ -231,32 +230,22 @@ export default function Main() {
                   content: (
                     <div className="rounded-xl  bg-white/5 border-1 border-[#5054CC] shadow-[0_0_20px_2px_rgba(127,95,255,0.33)] backdrop-blur-3xl p-6 shadow-lg text-white ">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm tracking-wide text-white font-bold">Competitions • Showcase</span>
+                        <span className="text-sm tracking-wide text-white font-bold">Competitions • Showcase • Engi Talks </span>
                         <span className="text-xs text-white">Day 2</span>
                       </div>
                       <p className="text-sm md:text-base text-white">
-                        Major events including Robowars, Hackathon, Bot Expo, and Tech Mela. Witness cutting-edge innovation.
+                        Auto Expo, Egg Drop Challenge, VR Event, Project Expo, Beach Event, Pro Show and many more!
                       </p>
                     </div>
                   ),
                 },
-                {
-                  title: "ENGI DAY 3",
-                  content: (
-                    <div className="rounded-xl  bg-white/5 border-1 border-[#5054CC] shadow-[0_0_20px_2px_rgba(127,95,255,0.33)] backdrop-blur-3xl p-6 shadow-lg text-white ">
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm tracking-wide text-white font-bold">Finals • Awards • Closing</span>
-                        <span className="text-xs text-white">Day 3</span>
-                      </div>
-                      <p className="text-sm md:text-base text-white">
-                        Final rounds, project demos, and the grand closing ceremony with awards and recognition.
-                      </p>
-                    </div>
-                  ),
-                },
-              ]}
+              ]
+              }
             />
           </div>
+
+
+
 
           {/* Get Ready for What's Next */}
           <div className="py-12" >

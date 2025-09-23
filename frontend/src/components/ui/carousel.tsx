@@ -5,79 +5,64 @@ import { useState, useRef, useId, useEffect } from "react";
 
 interface SlideData {
   title: string;
-  button: string;
   src: string;
 }
 
 const slides: SlideData[] = [
   {
     title: "Robowars",
-    button: "Learn More",
     src: "/images/robowars.png",
   },
   {
     title: "The Engineer Hackathon",
-    button: "Learn More",
     src: "/images/hackathon.png",
   },
   {
     title: "Robocon Bot Expo",
-    button: "Learn More",
     src: "/images/robocon_expo.png",
   },
   {
     title: "Engi talks",
-    button: "Learn More",
     src: "/images/engi_talks.png",
   },
   {
     title: "Workshops",
-    button: "Learn More",
     src: "/images/workshops.png",
   },
   {
     title: "Line Tracker Bot Race",
-    button: "Learn More",
     src: "/images/line_tracker_bot_race.png",
   },
   {
     title: "Robo Soccer",
-    button: "Learn More",
     src: "/images/robo_soccer.png",
   },
   {
     title: "Wright Flight",
-    button: "Learn More",
     src: "/images/wright_flight.png",
   },
   {
     title: "Drone Race",
-    button: "Learn More",
     src: "/images/drone_race.png",
   },
   {
     title: "Robo Racing",
-    button: "Learn More",
     src: "/images/robo_racing.png",
   },
   {
     title: "Open House Labs",
-    button: "Learn More",
     src: "/images/open_house_labs.png",
   },
   {
     title: "Tech/Space Quizzers",
-    button: "Learn More",
     src: "/images/tech_space_quizzers.png",
   },
   {
     title: "Beach Event",
-    button: "Learn More",
     src: "/images/beach_event.png",
   },
   {
     title: "Tech Mela",
-    button: "Learn More",
     src: "/images/tech_mela.jpg",
   },
 ];
@@ -94,7 +79,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
   const xRef = useRef(0);
   const yRef = useRef(0);
-  const frameRef = useRef<number | undefined>(undefined); // Fixed: added initial value
+  const frameRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const animate = () => {
@@ -124,7 +109,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
 
 
-  const { src, button, title } = slide;
+  const { src, title } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d] ">
@@ -150,7 +135,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           <img
             className="absolute inset-0 w-[100%] h-[100%] object-fit transition-opacity duration-600 ease-in-out"
             style={{
-              opacity: loaded ? (current === index ? 0.5 : 0.8) : 0, // fade from 0
+              opacity: loaded ? (current === index ? 0.5 : 0.8) : 0,
               boxShadow: "0 4px 20px rgba(248, 248, 248, 0.5)",
             }}
             alt={title}
@@ -172,11 +157,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
           <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold relative text-white text-3d-light">
             {title}
           </h2>
-          <div className="flex justify-center">
-            <button className="mt-6  px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-              {button}
-            </button>
-          </div>
+
         </article>
       </li>
     </div>

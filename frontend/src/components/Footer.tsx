@@ -14,7 +14,7 @@ export default function Footer() {
           <nav className="flex flex-wrap items-center gap-6 text-sm text-cosmic-dust"> {/* increased gap */}
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <Link to="/about" className="hover:text-white transition-colors">About</Link>
-            {/* <Link to="/events" className="hover:text-white transition-colors">Events</Link> */}
+            <Link to="/events" className="hover:text-white transition-colors">Events</Link>
             <Link to="/schedule" className="hover:text-white transition-colors">Schedule</Link>
             <Link to="/team" className="hover:text-white transition-colors">Team</Link>
             <Link to="/sponsors" className="hover:text-white transition-colors">Sponsors</Link>
