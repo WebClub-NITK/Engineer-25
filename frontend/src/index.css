@@ -93,9 +93,13 @@ body {
     0 6px 0 rgba(255, 255, 255, 0.025);
 }
 
-/* Apply 3D effects to all text by default */
 h1, h2, h3, h4, h5, h6, p, span, div {
   text-shadow: 
     0 1px 0 rgba(255, 255, 255, 0.1),
     0 2px 0 rgba(255, 255, 255, 0.05);
+}
+
+.floating-dock-horizontal .text-3d-light {
+  position: static !important;
+  margin-top: 4px;
 }

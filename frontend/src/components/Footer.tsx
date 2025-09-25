@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { IconBrandLinkedin, IconBrandInstagram, IconBrandTelegram } from '@tabler/icons-react'
+import { IconBrandLinkedin, IconBrandInstagram, IconBrandTelegram, IconHeartFilled } from '@tabler/icons-react'
 
 export default function Footer() {
   return (
@@ -50,8 +50,16 @@ export default function Footer() {
             </a>
           </div>
         </div>
+      <div className="text-center my-5 font-bold">
+  <p className="flex items-center justify-center gap-2 text-sm sm:text-base md:text-lg">
+    Made with 
+    <IconHeartFilled className="text-red-500 mx-1 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" /> 
+    by WebClub NITK
+  </p>
+</div>
 
-        <div className="mt-8 text-xs text-cosmic-dust/80"> {/* more margin on top */}
+
+        <div className="text-xs text-center text-cosmic-dust/80"> {/* more margin on top */}
           © {new Date().getFullYear()} ENGINEER, NITK. All rights reserved.
         </div>
       </div>

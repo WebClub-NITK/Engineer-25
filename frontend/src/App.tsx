@@ -24,6 +24,25 @@ export default function App() {
         />
       </div>
 
+      {/* Floating Dock - For Mobile Interface */}
+      <div className="fixed top-0 left-1/2 z-50 flex md:hidden -translate-x-1/2 w-full px-3 py-2 pointer-events-none">
+        <div className="mx-auto w-full max-w-[calc(100vw-24px)] overflow-hidden pointer-events-auto">
+          <FloatingDock
+            items={[
+              { title: 'Home', icon: <IconHome className="text-white" />, href: '/' },
+              { title: 'About', icon: <IconInfoCircle className="text-white" />, href: '/about' },
+              { title: 'Events', icon: <IconPennantFilled className="text-white" />, href: '/events' },
+              { title: 'Schedule', icon: <IconCalendarEvent className="text-white" />, href: '/schedule' },
+              { title: 'Team', icon: <IconUsers className="text-white" />, href: '/team' },
+              { title: 'Sponsors', icon: <IconBuildingSkyscraper className="text-white" />, href: '/sponsors' },
+            ]}
+            desktopClassName="flex flex-row justify-center items-center gap-3"
+            mobileClassName="!rounded-none !backdrop-blur-none !border-none !shadow-none"
+          />
+        </div>
+      </div>
+
+
       {/* Main Content */}
       <main className="flex-1 pt-24 md:pt-28">
         <Outlet />

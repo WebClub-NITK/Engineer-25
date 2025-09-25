@@ -305,8 +305,8 @@ export default function EventSchedule() {
                 key={day}
                 onClick={() => setSelectedDay(day)}
                 className={`px-4 py-2 rounded-lg border transition-all duration-300 text-left ${selectedDay === day
-                    ? "bg-white/30 border-white text-white font-semibold"
-                    : "bg-white/10 border-white/30 text-white/70 hover:bg-white/20 hover:text-white"
+                  ? "bg-white/30 border-white text-white font-semibold"
+                  : "bg-white/10 border-white/30 text-white/70 hover:bg-white/20 hover:text-white"
                   }`}
               >
                 {day}
@@ -324,8 +324,8 @@ export default function EventSchedule() {
                 key={day}
                 onClick={() => setSelectedDay(day)}
                 className={`px-4 py-2 rounded-lg border transition-all duration-300 ${selectedDay === day
-                    ? "bg-white/30 border-white text-white font-semibold"
-                    : "bg-white/10 border-white/30 text-white/70 hover:bg-white/20 hover:text-white"
+                  ? "bg-white/30 border-white text-white font-semibold"
+                  : "bg-white/10 border-white/30 text-white/70 hover:bg-white/20 hover:text-white"
                   }`}
               >
                 {day}
@@ -417,9 +417,9 @@ export default function EventSchedule() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <p className="text-white/80 text-lg">
-              For registrations, head on to Events Page
-            </p>
+            <h1 className="text-xl sm:text-xl md:text-3xl font-bold text-white text-center">
+              For registrations, head on to  <a href="/events" target="_blank" className="underline hover:text-blue-400">Events</a>
+            </h1>
           </motion.div>
         </div>
       </div>

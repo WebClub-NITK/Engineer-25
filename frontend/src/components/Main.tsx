@@ -242,6 +242,10 @@ export default function Main() {
               ]
               }
             />
+
+            <h1 className="text-xl sm:text-xl md:text-3xl font-bold text-white text-center">
+              Check full schedule <a href="/schedule" className="underline hover:text-blue-400">here</a>
+            </h1>
           </div>
 
 
@@ -258,7 +262,15 @@ export default function Main() {
             <div className="px-2 sm:px-4">
               <Carousel />
             </div>
+
+
           </div>
+
+          <h1 className="text-xl sm:text-xl md:text-3xl font-bold text-white text-center mt-20">
+            More details about events can be found <a href="/events" className="underline hover:text-blue-400">here</a>
+          </h1>
+
+
 
           <div className="px-2 sm:px-4 md:px-8 my-35" >
             <h2 className="text-3xl sm:text-5xl md:text-6xl my-6 font-extrabold text-white text-3d-strong text-center drop-shadow-[0_0_25px_rgba(255,255,255,0.4)] ">
