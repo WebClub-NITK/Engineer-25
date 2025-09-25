@@ -67,7 +67,7 @@ export default function Main() {
 
         >
 
-          <div className="h-screen flex flex-col items-center justify-center relative px-2 sm:px-4 pt-10 md:pt-16 overflow-hidden">
+          <div className="h-screen flex flex-col items-center justify-center relative px-2 sm:px-4 pt-5 md:pt-5 overflow-hidden">
 
             <img
               src="/images/logo.png"
