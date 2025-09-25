@@ -234,7 +234,7 @@ export default function IntroOverlay({
               animate={{ opacity: stage === 'dim' ? 0.6 : 1, scale: stage === 'dim' ? 1.05 : 1 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
               className="font-space-grotesk font-extrabold text-neutral-900 text-3d-hero"
-              style={{ fontSize: 'clamp(3rem, 8vw, 7rem)' }}
+              style={{ fontSize: 'clamp(2.5rem, 6vw, 5.5rem)' }}
             >
               {lineIndex === 0 ? displayed : 'ENGINEER 25'}
               {lineIndex === 0 && <span className="ml-1 animate-pulse">▌</span>}
@@ -256,7 +256,7 @@ export default function IntroOverlay({
         src={"images/logo.png"}
         alt={"logo"}
         style={{
-          width: "min(40vw, 400px)",
+          width: "min(30vw, 320px)",
           height: "auto",
           filter: "drop-shadow(0 0 65px rgba(15,52,96,1))",
           margin: "40px 0"
