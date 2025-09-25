@@ -21,6 +21,7 @@ const members =
   { "image": "/images/team/dhanush.jpeg", "name": "Dhanush", "position": "Marketing Head" },
   { "image": "/images/team/sujith.jpeg", "name": "Sujith Setlem", "position": "Media Head" },
   { "image": "/images/team/kartheek.jpg", "name": "Kartheek", "position": "Media Head" },
+  { "image": "/images/team/thushar.jpeg", "name": "Thushar", "position": "Media Head" },
   { "image": "/images/team/sawanth.jpeg", "name": "Sawanth", "position": "Publicity Head" },
   { "image": "/images/team/yuvaraj.jpeg", "name": "Yuvraj", "position": "Operations Head" },
   { "image": "/images/team/anoop.jpeg", "name": "Anoop", "position": "Creative Head" },
