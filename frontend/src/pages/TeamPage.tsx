@@ -9,8 +9,7 @@ export default function ParallaxScrollDemo() {
 const members = 
 [
   { "image": "/images/team/dsw.png", "name": "Dr. Mandela Govinda Raj", "position": "Dean (Students Welfare)" },
-  { "image": "/images/team/sb_arya.png", "name": "Dr. Shashi Bhushan Arya", "position": "Technical Committee In-Charge" },
-  { "image": "/images/team/Dr_S_Pavan_Kumar_1.jpg", "name": "Dr. S Pavan Kumar", "position": "Associate Dean" },
+  { "image": "/images/team/sb_arya.png", "name": "Dr. Shashi Bhushan Arya", "position": "Technical Clubs and Engineer" },
   { "image": "/images/team/shreesha.png", "name": "Shreesha M B", "position": "Convenor" },
   { "image": "/images/team/pranav.jpeg", "name": "Pranav Simha N", "position": "Chief Organizer" },
   { "image": "/images/team/waseem.jpeg", "name": "Waseem", "position": "Co-convenor" },
