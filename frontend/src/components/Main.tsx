@@ -13,6 +13,7 @@ import IntroOverlay from "@/components/effects/IntroOverlay"
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 import Footer from "@/components/Footer"
 import Carousel from "@/components/ui/carousel"
+import { Button } from "@/components/ui/button"
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
@@ -25,6 +26,17 @@ export default function Main() {
   const [introVisible, setIntroVisible] = useState(true)
 
   const smootherRef = useRef<ReturnType<typeof ScrollSmoother.create> | null>(null)
+
+  const speakers = [
+    {
+      name: "Mrutyunjay Hiremath",
+      image: "/images/speakers/mrutyunjay_hiremath.png",
+    },
+    {
+      name: "Angad Pratap",
+      image: "/images/speakers/angad_pratap.png",
+    },
+  ]
 
   useEffect(() => {
     if (typeof window === "undefined") return
@@ -242,9 +254,21 @@ export default function Main() {
               ]
               }
             />
+            <div className="text-center">
+              <Button
+                className="rounded-xl  bg-white/8 border-3 border-[#5054CC] shadow-[0_0_20px_2px_rgba(127,95,255,0.33)] backdrop-blur-3xl p-6 shadow-lg my-5 text-xl text-white font-bold"  >
+                <a
+                  href="events.pdf"
+                  download="Engineer_Events_List"
+                >
+                  Download Full Event Schedule
+                </a>
+              </Button>
+
+            </div>
 
             <h1 className="text-xl sm:text-xl md:text-3xl font-bold text-white text-center">
-              Check full schedule <a href="/schedule" className="underline hover:text-blue-400">here</a>
+              Or check <a href="/schedule" className="underline hover:text-blue-400">here</a>
             </h1>
           </div>
 
@@ -269,6 +293,34 @@ export default function Main() {
           <h1 className="text-xl sm:text-xl md:text-3xl font-bold text-white text-center mt-20">
             More details about events can be found <a href="/events" className="underline hover:text-blue-400">here</a>
           </h1>
+
+          <div className="py-12">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl my-5 font-extrabold text-white text-3d-strong text-center drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]">
+              <span className="relative inline-block">
+                Our Speakers
+                <span className="absolute inset-0 rounded-full blur-3xl bg-white/5 animate-pulse"></span>
+              </span>
+            </h1>
+
+            <div className="px-2 sm:px-4 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+              {speakers.map((speaker, index) => (
+                <div
+                  key={index}
+                  className="bg-white/10 backdrop-blur-xl rounded-xl p-4 flex flex-col items-center text-center shadow-lg hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all h-[28rem] border-2 mx-5"
+                >
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="w-full h-90 object-fill rounded-xl mb-4"
+                  />
+                  <h2 className="text-xl sm:text-2xl font-bold text-white mt-auto">{speaker.name}</h2>
+                </div>
+              ))}
+            </div>
+
+
+          </div>
+
 
 
 
